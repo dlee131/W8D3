@@ -6,7 +6,17 @@ Array.prototype.myEach = function(callback) {  // why doesn't (callback) after m
 }
 
 function cLog2(num) {
-    console.log(num * 2);
+    return (num * 2);
 }
 
 // [1,2,3].myEach(cLog2)
+
+
+Array.prototype.myMap = function (callback) {
+    let newArray = [];
+    for ( let i = 0; i < this.length; i++) {
+        newArray.push(callback(this[i]));
+    }
+    return newArray
+}
+
