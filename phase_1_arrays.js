@@ -19,3 +19,25 @@ Array.prototype.twoSum = function() {
     }
     return newArray
 }
+
+Array.prototype.transpose = function () {
+    let newArray = [];
+    for (let i = 0; i < this[0].length; i++) {
+        let subArray = [];
+        for (let j = 0; j < this.length; j++) {
+            subArray.push(this[j][i]);
+        }
+        newArray.push(subArray)
+    }
+    return newArray
+}
+
+
+//[ [4,5],
+//  [6,7],
+//  [8,9]  ]
+
+//[ [4,6,8],
+// [5,7,9] ]
+
+// 
