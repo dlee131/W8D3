@@ -39,5 +39,3 @@ Array.prototype.transpose = function () {
 
 //[ [4,6,8],
 // [5,7,9] ]
-
-// 
